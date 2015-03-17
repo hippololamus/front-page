@@ -1,0 +1,29 @@
+{
+  "name": "front-page",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hippololamus/front-page.git"
+  },
+  "author": "hippololamus",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/hippololamus/front-page/issues"
+  },
+  "homepage": "https://github.com/hippololamus/front-page",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.1",
+    "gulp-run-sequence": "^0.3.2",
+    "gulp-webserver": "^0.9.0",
+    "require-dir": "^0.1.0",
+    "vinyl-transform": "^1.0.0"
+  }
+}
