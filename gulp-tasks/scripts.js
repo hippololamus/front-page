@@ -10,11 +10,12 @@ var config = require('../config').browserify;
  */
 gulp.task('scripts', function() {
   var browserified = transform(function(filename) {
-    var b = browserify(filename);
+    var b = browserify(filename, config);
     return b.bundle();
   });
-
-  return gulp.src(config.entries)
+  var files = config.entries;
+  delete config.entries;
+  return gulp.src(files)
     .pipe(browserified)
     .pipe(gulp.dest(config.dest));
 });
