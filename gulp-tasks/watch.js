@@ -6,4 +6,5 @@ var config = require('../config');
 gulp.task('watch', function() {
     gulp.watch(config.buildDir.src + config.buildDir.scripts, ['scripts']);
     gulp.watch(config.styles.src, ['styles']);
+    gulp.watch(config.buildDir.src + config.buildDir.html, ['html']);
 });
